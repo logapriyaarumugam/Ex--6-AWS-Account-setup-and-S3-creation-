@@ -1,7 +1,7 @@
 ## Ex--2-AWS-Account-setup-and-EC2-creation
 
-# Name :MANOSHREE N
-# Reg.no : 212225040228
+# Name :LOGAPRIYA A
+# Reg.no : 212225040202
 
 # Introduction
 
