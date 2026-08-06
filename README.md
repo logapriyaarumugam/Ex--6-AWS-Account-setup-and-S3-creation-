@@ -1,57 +1,69 @@
-## Ex--2-AWS-Account-setup-and-EC2-creation
+## Ex--3-AWS-Account-Setup-and-EC2-Creation
 
-# Name :LOGAPRIYA A
+# Name : LOGAPRIYA A
 # Reg.no : 212225040202
 
 # Introduction
 
-In this lab, we are going to be introduced to one of the famous Cloud Service providers, Amazon Web Services (AWS). We will work on EC2, which provides storage through web service interfaces (REST, SOAP, and BitTorrent). In EC2, the data is stored in the form of buckets. Buckets serve as root folders where we can add, create, or upload files and folders. We can create multiple buckets for different purposes, and each bucket can have different access control policies.
+In this lab, we are introduced to Amazon Elastic Compute Cloud (Amazon EC2), one of the core services provided by Amazon Web Services (AWS). Amazon EC2 allows users to create and manage virtual servers in the cloud. In this experiment, we launch an EC2 instance, configure its security group, monitor its status, resize the instance and storage, test stop protection, and finally stop the instance.
 
 ## Objectives
 
-- Create a Bucket in Amazon EC2.
-- Add Objects (files and folders) to the bucket.
-- Access, move, download, and delete the objects.
-- Delete the Bucket.
+- Launch an Amazon EC2 instance.
+- Monitor the EC2 instance.
+- Configure the security group to allow HTTP access.
+- Resize the EC2 instance and EBS volume.
+- Test stop protection.
+- Stop the EC2 instance.
 
 ## Illustration
 
-### Step 1: Choose EC2 Service
+### Step 1: Launch an EC2 Instance
+<img width="965" height="1079" alt="Screenshot 2026-08-05 140017" src="https://github.com/user-attachments/assets/0d47b49e-56a3-46f6-964a-cb9a23ebf98f" />
+<img width="1920" height="1080" alt="Screenshot 2026-08-05 152332" src="https://github.com/user-attachments/assets/eb038dda-07cd-45dd-89c5-2666b5b40a60" />
 
-Choose the EC2 service from the list of services provided by AWS.
-<img width="1801" height="873" alt="ChatGPT Image Aug 4, 2026, 12_05_09 AM" src="https://github.com/user-attachments/assets/7f35b7bb-4296-488c-855d-adc91a2e5ded" />
+### Step 2: Monitor the EC2 Instance
 
+<img width="967" height="1075" alt="Screenshot 2026-08-05 152515" src="https://github.com/user-attachments/assets/b44fd3e2-be7e-4b59-a963-d451295916ab" />
 
-### Step 2: Create a Unique Bucket
-
-After selecting the ec2 service, click on the "Create Bucket" button on the page. The bucket name must be unique, contain no uppercase letters, and have no special characters. If you enter any of these, an error will display, preventing the bucket from being created.
-<img width="1548" height="1016" alt="ChatGPT Image Aug 4, 2026, 12_07_12 AM" src="https://github.com/user-attachments/assets/481433d5-3475-4ad7-8cc9-f1f330c57d25" />
-
-<img width="1695" height="928" alt="ChatGPT Image Aug 4, 2026, 12_09_38 AM" src="https://github.com/user-attachments/assets/d25ddde8-a1c6-4be9-8013-80acf73c0b1e" />
-
-<img width="1692" height="930" alt="ChatGPT Image Aug 4, 2026, 12_11_30 AM" src="https://github.com/user-attachments/assets/207734e9-1664-4a33-9e1d-6d20527df93c" />
-
-<img width="1677" height="938" alt="ChatGPT Image Aug 4, 2026, 12_13_34 AM" src="https://github.com/user-attachments/assets/d8ebee71-304c-4bef-b1c7-30cebf5f498f" />
-
-### Step 3: Upload Files to the Bucket
-
-Now, I have uploaded some files into the bucket I just created. There are no restrictions on uploading file types, but the size of each file must be less than 5 terabytes.
-<img width="1618" height="972" alt="ChatGPT Image Aug 4, 2026, 12_23_53 AM" src="https://github.com/user-attachments/assets/3bf38494-5073-4756-a0dc-10add72f9561" />
-<img width="1635" height="962" alt="ChatGPT Image Aug 4, 2026, 12_26_14 AM" src="https://github.com/user-attachments/assets/c53e6743-09ad-42b9-961c-c88fe962f8e9" />
+<img width="954" height="1079" alt="Screenshot 2026-08-05 152546" src="https://github.com/user-attachments/assets/d684dfda-db94-4e1f-8f97-099ff54502f5" />
 
 
-### Step 4: Delete the Bucket
+### Step 3: Configure Security Group and Access the Web Server
 
-To delete a bucket, you must retype the bucket name. This policy is implemented by Amazon to confirm your action because deleting a bucket can remove large amounts of data.
+<img width="953" height="1079" alt="Screenshot 2026-08-05 152920" src="https://github.com/user-attachments/assets/5b87c4b6-d60e-4f6b-b311-d3bc6003fc04" />
 
-<img width="1681" height="936" alt="ChatGPT Image Aug 4, 2026, 12_28_30 AM" src="https://github.com/user-attachments/assets/c9e1bef7-9b9b-48d7-88ef-49fb690a56b0" />
+<img width="1919" height="1079" alt="Screenshot 2026-08-05 153008" src="https://github.com/user-attachments/assets/4459e68b-a198-462d-8265-45409554a2bb" />
 
-<img width="1600" height="983" alt="ChatGPT Image Aug 4, 2026, 12_30_06 AM" src="https://github.com/user-attachments/assets/32f3f6ee-3086-4997-9523-b2c749083f43" />
 
-### Step 5: upload a folder
-<img width="628" height="500" alt="image" src="https://github.com/user-attachments/assets/f94df1bf-6957-418e-a778-c9adaf9e4e19" />
+### Step 4: Resize the EC2 Instance and EBS Volume
+
+<img width="963" height="1079" alt="Screenshot 2026-08-05 153222" src="https://github.com/user-attachments/assets/587b976f-e3fc-4680-9afe-948cd91b4bee" />
+
+<img width="961" height="1077" alt="Screenshot 2026-08-05 153513" src="https://github.com/user-attachments/assets/67f144a9-a4ab-41cc-b905-7e96bd2bc490" />
+
+
+### Step 5: Explore EC2 Limits
+
+<img width="965" height="1079" alt="Screenshot 2026-08-05 153555" src="https://github.com/user-attachments/assets/b1224459-2317-4878-b34e-c1adb3304732" />
+
+
+<img width="964" height="1079" alt="Screenshot 2026-08-05 153709" src="https://github.com/user-attachments/assets/829ce739-11ba-4829-bc61-5adc413a2df6" />
+
+### Step 6: Test Stop Protection
+
+<img width="961" height="1079" alt="Screenshot 2026-08-05 153806" src="https://github.com/user-attachments/assets/fd599af5-f386-48fe-aad7-dc96f87dad86" />
+
+<img width="966" height="1079" alt="Screenshot 2026-08-05 154509" src="https://github.com/user-attachments/assets/0383e2b1-2333-4228-b457-0af1a3f79d0a" />
+
+
+### Step 7: Stop the EC2 Instance
+
+<img width="968" height="1079" alt="Screenshot 2026-08-05 154531" src="https://github.com/user-attachments/assets/04ec933e-ef6c-4d61-9664-f55f5a12ccba" />
+
+<img width="953" height="1079" alt="Screenshot 2026-08-05 154749" src="https://github.com/user-attachments/assets/96207a4c-9f76-4248-8246-5e5226142619" />
 
 
 ## Result
 
-Successfully created, managed, and deleted an EC2 on AWS, demonstrating the ability to upload, access, and control objects within Amazon S3.
+Successfully launched, monitored, configured, resized, and managed an Amazon EC2 instance in AWS. Verified web server access, modified the security group, tested stop protection, and stopped the EC2 instance successfully.
